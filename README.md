@@ -15,3 +15,7 @@
 
 - [HashTable code(C++)](https://github.com/goodluck3301/DataStructuresAndAlgorithms/blob/main/hashtable.cpp)<br/>
 - [HashTable code(Pyhon)](https://github.com/goodluck3301/DataStructuresAndAlgorithms/blob/main/hashTable.py)
+
+
+Useful Sites
+- [Справочник по Java Collections Framework](https://habr.com/ru/post/237043/)
