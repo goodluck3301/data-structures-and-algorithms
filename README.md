@@ -19,3 +19,4 @@
 
 Useful Sites
 - [Справочник по Java Collections Framework](https://habr.com/ru/post/237043/)
+- [Differences between HashMap, HashTable, LinkedHashMap and TreeMap in java](https://www.javamadesoeasy.com/2015/04/hashmap-vs-hashtable-vs-linkedhashmap.html)
