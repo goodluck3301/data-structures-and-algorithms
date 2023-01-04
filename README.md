@@ -5,7 +5,13 @@
 
 ### [HashTable & Big O Notation](https://lukabaramishvili.medium.com/data-structure-hash-table-big-o-notation-a2ee869be861)
 
-![HashTable Big O Notation](https://miro.medium.com/max/720/1*W4_MJgwQTobJFs8nS4wyVQ.webp)
---
+| Operations 	| Average 	| Worst Case 	|
+|------------	|---------	|------------	|
+| Space      	| O(n)    	| O(n)       	|
+| Insert     	| O(1)    	| O(n)       	|
+| Lookup     	| O(1)    	| O(n)       	|
+| Delete     	| O(1)    	| O(n)       	|
+
+
 - [HashTable code(C++)](https://github.com/goodluck3301/DataStructuresAndAlgorithms/blob/main/hashtable.cpp)<br/>
 - [HashTable code(Pyhon)](https://github.com/goodluck3301/DataStructuresAndAlgorithms/blob/main/hashTable.py)
