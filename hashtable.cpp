@@ -18,7 +18,6 @@ struct Ht_item {
     char* key;
     char* value;
 };
-
 typedef struct HashTable HashTable;
 
 // Define the Hash Table here
