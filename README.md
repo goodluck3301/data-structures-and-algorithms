@@ -69,3 +69,8 @@ ___
 
 ### [Big O notation for TreeMap in Java](https://www.javapedia.net/module/Java/Map-and-its-implementations/2609)<br/>
 TreeMap guarantees ```log(n)``` time cost for operatons like containsKey, get, put and remove.
+
+![TreeMap](https://i0.wp.com/www.dineshonjava.com/wp-content/uploads/2018/10/FourthObjecctInserted.png?resize=768%2C385&ssl=1)
+
+Useful Sites
+- [TreeMap](https://www.dineshonjava.com/internal-working-of-treemap-in-java/)
