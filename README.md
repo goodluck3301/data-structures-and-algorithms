@@ -7,8 +7,9 @@
 - TreeHasMap
 - SortedMap
   - TreeHashMap
- 
- 
+ ___
+ - ## HashTable/HashMap
+ ___
 ![HashTable](https://www.databricks.com/wp-content/uploads/2018/12/hash-buckets.jpg)
 
 ### [HashTable & Big O Notation](https://lukabaramishvili.medium.com/data-structure-hash-table-big-o-notation-a2ee869be861)
@@ -30,3 +31,41 @@ Useful Sites
 - [Differences between HashMap, HashTable, LinkedHashMap and TreeMap in java](https://www.javamadesoeasy.com/2015/04/hashmap-vs-hashtable-vs-linkedhashmap.html)
 - [How HashTable works Internally? HashTable vs HashMap in Java - By Naveen AutomationLabs (VIDEO-EN)](https://www.youtube.com/watch?v=7fby_jzPAbg)
 - [How HashMap works internally || Popular java interview question on collection (VIDEO-EN)](https://www.youtube.com/watch?v=SXfsBDTodpY)
+
+___
+- ## [LinkedHashMap](https://www.javatpoint.com/java-linkedhashmap)
+___
+![Map Implementations](https://static.javatpoint.com/images/linkedhashmap.png)
+
+```java
+  public class LinkedHashMap<K,V> extends HashMap<K,V> implements Map<K,V>  
+```
+```java
+  import java.util.*;  
+  
+  class LinkedHashMap1{  
+    public static void main(String args[]){  
+   
+      LinkedHashMap<Integer,String> hm=new LinkedHashMap<Integer,String>();  
+  
+      hm.put(100,"Amit");  
+      hm.put(101,"Vijay");  
+      hm.put(102,"Rahul");  
+  
+      for(Map.Entry m:hm.entrySet()){  
+        System.out.println(m.getKey()+" "+m.getValue());  
+      }  
+    }    
+  }  
+```
+```
+Output:100 Amit
+       101 Vijay
+       102 Rahul
+```
+___
+- ## TreeMap
+___
+
+### [Big O notation for TreeMap in Java](https://www.javapedia.net/module/Java/Map-and-its-implementations/2609)<br/>
+TreeMap guarantees ```log(n)``` time cost for operatons like containsKey, get, put and remove.
