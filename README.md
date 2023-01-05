@@ -1,12 +1,11 @@
 # Data Structures & Algorithms
 
 - ## [Map Implementations](https://docs.oracle.com/javase/tutorial/collections/implementations/map.html)
-- HashMap
-- HashTable
-- LinkedHashMap
-- TreeHasMap
+- [HashMap](https://github.com/goodluck3301/data-structures-and-algorithms#hashtablehashmap)
+- [HashTable](https://github.com/goodluck3301/data-structures-and-algorithms#hashtablehashmap)
+- [LinkedHashMap](https://github.com/goodluck3301/data-structures-and-algorithms#linkedhashmap)
 - SortedMap
-  - TreeHashMap
+  - [TreeHashMap](https://github.com/goodluck3301/data-structures-and-algorithms#treemap)
  ___
  - ## HashTable/HashMap
  ___
