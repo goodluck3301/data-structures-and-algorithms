@@ -1,6 +1,14 @@
 # Data Structures & Algorithms
 
-- ## [About Map Implementations](https://www.digitalocean.com/community/tutorials/hash-table-in-c-plus-plus) 
+- ## [Map Implementations](https://docs.oracle.com/javase/tutorial/collections/implementations/map.html)
+- HashMap
+- HashTable
+- LinkedHashMap
+- TreeHasMap
+- SortedMap
+  - TreeHashMap
+ 
+ 
 ![HashTable](https://www.databricks.com/wp-content/uploads/2018/12/hash-buckets.jpg)
 
 ### [HashTable & Big O Notation](https://lukabaramishvili.medium.com/data-structure-hash-table-big-o-notation-a2ee869be861)
