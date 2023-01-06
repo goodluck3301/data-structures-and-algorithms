@@ -73,3 +73,15 @@ TreeMap guarantees ```log(n)``` time cost for operatons like containsKey, get, p
 
 Useful Sites
 - [TreeMap](https://www.dineshonjava.com/internal-working-of-treemap-in-java/)
+
+___
+- ## [Linked List](https://www.javatpoint.com/singly-linked-list)
+___
+
+![LinkedList](https://1.bp.blogspot.com/-9eEC1iDZvW4/YBBXrFW7MtI/AAAAAAAABpg/sF_Ud7QsvxEBBN8NdAsIrj2zOjY0tKKfACLcBGAsYHQ/w640-h152/LinkedList%2Binternal%2Bimplementation.png)
+
+- [Linked List (java)](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/DataStructureInternalWorking/LinkedLits.java)<br/>
+
+### [Big O notation for Linked List](https://medium.com/@mckenziefiege/arrays-linked-lists-and-big-o-notation-486727b6259b)<br/>
+
+![Big(o) Linked List](https://miro.medium.com/max/720/1*3IlTLK_S0HmATuYQGxcbUA.webp)
