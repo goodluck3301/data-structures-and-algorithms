@@ -21,8 +21,8 @@
 | Delete     	| O(1)    	| O(n)       	|
 
 
-- [HashTable code(C)](https://github.com/goodluck3301/DataStructuresAndAlgorithms/blob/main/hashtable.cpp)<br/>
-- [HashTable code(Pyhon)](https://github.com/goodluck3301/DataStructuresAndAlgorithms/blob/main/hashTable.py)
+- [HashTable code(C)](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/DataStructureInternalWorking/hashtable.c)<br/>
+- [HashTable code(Pyhon)](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/DataStructureInternalWorking/hashTable.py)
 
 
 Useful Sites
