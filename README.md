@@ -1,5 +1,16 @@
 # Data Structures & Algorithms
 
+- ## Linear Data Structures
+     - Arrays
+     - [Linked List](https://github.com/goodluck3301/data-structures-and-algorithms#linked-list)
+     - Stack
+     - Queue
+- ## Non Linear Data Structures
+     - Trees
+     - Graphs
+     - [Map](https://github.com/goodluck3301/data-structures-and-algorithms#map-implementations)
+___
+
 - ## [Map Implementations](https://docs.oracle.com/javase/tutorial/collections/implementations/map.html)
 - [HashMap](https://github.com/goodluck3301/data-structures-and-algorithms#hashtablehashmap)
 - [HashTable](https://github.com/goodluck3301/data-structures-and-algorithms#hashtablehashmap)
