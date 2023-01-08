@@ -274,3 +274,58 @@ ___
  ___
  Usefull sites
  - [Stacks, Queues and Big O Notation](https://sebastian-abarca.medium.com/stacks-queues-and-big-o-notation-4a555443260c)
+
+ ___
+ - ## Trees
+ ___
+Many interviewees find tree and graph problems to be some of the trickiest. Searching a tree is more
+complicated than searching in a linearly organized data structure such as an array or linked list. Additionally, the worst case and average case time may vary wildly, and we must evaluate both aspects of any
+algorithm. Fluency in implementing a tree or graph from scratch will prove essential.
+Because most people are more familiar with trees than graphs (and they're a bit simpler), we'll discuss trees
+first. This is a bit out of order though, as a tree is actually a type of graph.</br> 
+
+A nice way to understand a tree is with a recursive explanation, A tree is a data structure composed of
+nodes,
+- Each tree has a root node, (Actually, this isn't strictly necessary in graph theory, but it's usually how we
+use trees in programming, and especially programming interviews.)
+- The root node has 2ero or more child nodes.
+- Each child node has zero or more child nodes, and so on.
+The tree cannot contain cycles. The nodes mayor may not be in a particular order, they could have any data
+type as values, and they may or may not have links back to their parent nodes.</br>
+
+A very simple class definition for Node is: 
+```java
+class Node {
+     public String name;
+     public Node[] children;
+} 
+```
+You might also have a Tree class to wrap this node. For the purposes of interview questions, we typically
+do not use a Tre e class. You can if you feel it makes your code simpler or better, but it rarely does. 
+```java
+class Tree {
+     publi c Node root ;
+} 
+```
+- <h4><b>Trees vs. Binary Trees</b></h4>
+
+A binary tree is a tree in which each node has up to two children. Not all trees are binary trees. For example,
+this tree is not a binary tree. You could call it a ternary tree.</br>
+![Ternary Tree](https://algomonster.s3.us-east-2.amazonaws.com/dfs_with_states.png)
+
+<i>A node is called a "leaf" node if it has no children.</i>
+
+- <h4><b>Binary Tree vs. Binary Search Tree</b></h4>
+
+A binary search tree is a binary tree in which every node fits a specific ordering property: al l lef t
+descendents <= n < all righ t descendents. This must be true for each node n. </br>
+
+The definition of a binary search tree can vary slightly with respect to equality. Under some definitions, the tree cannot have duplicate values. In others, the duplicate values will be on the right
+or can be on either side. All are valid definitions, but you should clarify this with your interviewer.</br>
+
+![](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/image%20(2).png)
+
+
+ ___
+ - ## Graphs
+ ___
