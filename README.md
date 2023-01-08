@@ -171,13 +171,11 @@ class Stack
     // Utility function to return the top element of the stack
     public int peek()
     {
-        if (!isEmpty()) {
+        if (!isEmpty())
             return arr[top];
-        }
-        else {
+        else 
             System.exit(-1);
-        }
- 
+        
         return -1;
     }
  
@@ -217,12 +215,10 @@ class Main
         stack.pop();        // removing the top element (3)
  
         // check if the stack is empty
-        if (stack.isEmpty()) {
+        if (stack.isEmpty())
             System.out.println("The stack is empty");
-        }
-        else {
+        else 
             System.out.println("The stack is not empty");
-        }
     }
 }
 ```
