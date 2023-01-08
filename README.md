@@ -118,4 +118,135 @@ Array Lists (like those in .Net) give you the benefits of arrays, but dynamicall
  Questions on stacks and queues will be much easier to handle if you are comfortable with the ins and
 outs of the data structure. The problems can be quite tricky, though. While some problems may be
 slight modifications on the original data structure, others have much more complex challenges. 
+The stack data structure is precisely what it sounds like: a stack of data. In certain types of problems, it can
+be favorable to store data in a stack rather than in an array.</br>
+A stack uses LIFO (last-in first-out) ordering. That is, as in a stack of dinner plates, the most recent item
+added to the stack is the first item to be removed.</br>
+It uses the following operations:</br>
+- pop(): Remove the top item from the stack.
+- push( item) : Add an item to the top of the stack.
+- peek ( ): Return the top of the stack.
+- isEmpty() : Return true if and only if the stack is empty.
+Unlike an array, a stack does not offer constant-time access to the it h item. However, it does allow constanttime adds and removes, as it doesn't require shifting elements around.
+___
+![Stack](https://miro.medium.com/max/399/1*uJlB-5Gi87NI9jsiQx2aBA.gif)
+```java
+class Stack
+{
+    private int arr[];
+    private int top;
+    private int capacity;
+ 
+    // Constructor to initialize the stack
+    Stack(int size)
+    {
+        arr = new int[size];
+        capacity = size;
+        top = -1;
+    }
+ 
+    // Utility function to add an element `x` to the stack
+    public void push(int x)
+    {
+        if (isFull())
+        {
+            System.out.println("Overflow\nProgram Terminated\n");
+            System.exit(-1);
+        }
+ 
+        System.out.println("Inserting " + x);
+        arr[++top] = x;
+    }
+ 
+    // Utility function to pop a top element from the stack
+    public int pop()
+    {
+        // check for stack underflow
+        if (isEmpty())
+        {
+            System.out.println("Underflow\nProgram Terminated");
+            System.exit(-1);
+        }
+ 
+        System.out.println("Removing " + peek());
+ 
+        // decrease stack size by 1 and (optionally) return the popped element
+        return arr[top--];
+    }
+ 
+    // Utility function to return the top element of the stack
+    public int peek()
+    {
+        if (!isEmpty()) {
+            return arr[top];
+        }
+        else {
+            System.exit(-1);
+        }
+ 
+        return -1;
+    }
+ 
+    // Utility function to return the size of the stack
+    public int size() {
+        return top + 1;
+    }
+ 
+    // Utility function to check if the stack is empty or not
+    public boolean isEmpty() {
+        return top == -1;               // or return size() == 0;
+    }
+ 
+    // Utility function to check if the stack is full or not
+    public boolean isFull() {
+        return top == capacity - 1;     // or return size() == capacity;
+    }
+}
+ 
+class Main
+{
+    public static void main (String[] args)
+    {
+        Stack stack = new Stack(3);
+ 
+        stack.push(1);      // inserting 1 in the stack
+        stack.push(2);      // inserting 2 in the stack
+ 
+        stack.pop();        // removing the top element (2)
+        stack.pop();        // removing the top element (1)
+ 
+        stack.push(3);      // inserting 3 in the stack
+ 
+        System.out.println("The top element is " + stack.peek());
+        System.out.println("The stack size is " + stack.size());
+ 
+        stack.pop();        // removing the top element (3)
+ 
+        // check if the stack is empty
+        if (stack.isEmpty()) {
+            System.out.println("The stack is empty");
+        }
+        else {
+            System.out.println("The stack is not empty");
+        }
+    }
+}
+```
+```
+Output:
+     Inserting 1
+     Inserting 2
+     Removing 2
+     Removing 1
+     Inserting 3
+     The top element is 3
+     The stack size is 1
+     Removing 3
+     The stack is empty
+```
 
+One case where stacks are often useful is in certain recursive algorithms. Sometimes you need to push
+temporary data onto a stack as you recurse, but then remove them as you backtrack (for example, because
+the recursive check failed). A stack offers an intuitive way to do this.
+A stack can also be used to implement a recursive algorithm iteratively. (This is a good exercise! Take a
+simple recursive algorithm and implement it iteratively.) 
