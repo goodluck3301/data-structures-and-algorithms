@@ -3,7 +3,7 @@
 - ## Linear Data Structures
      - Arrays
      - [Linked List](https://github.com/goodluck3301/data-structures-and-algorithms#linked-list)
-     - Stack
+     - [Stack](https://github.com/goodluck3301/data-structures-and-algorithms#stack)
      - Queue
 - ## Non Linear Data Structures
      - Trees
@@ -112,3 +112,10 @@ ___
 
 Array Lists (like those in .Net) give you the benefits of arrays, but dynamically allocate resources for you so that you don't need to worry too much about list size and you can delete items at any index without any effort or re-shuffling elements around. Performance-wise, arraylists are slower than raw arrays.
  
+ ___
+ - ## Stack
+ ___
+ Questions on stacks and queues will be much easier to handle if you are comfortable with the ins and
+outs of the data structure. The problems can be quite tricky, though. While some problems may be
+slight modifications on the original data structure, others have much more complex challenges. 
+
