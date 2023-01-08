@@ -4,7 +4,7 @@
      - Arrays
      - [Linked List](https://github.com/goodluck3301/data-structures-and-algorithms#linked-list)
      - [Stack](https://github.com/goodluck3301/data-structures-and-algorithms#stack)
-     - Queue
+     - [Queue](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/README.md#queue)
 - ## Non Linear Data Structures
      - Trees
      - Graphs
@@ -115,13 +115,7 @@ Array Lists (like those in .Net) give you the benefits of arrays, but dynamicall
  ___
  - ## Stack
  ___
- Questions on stacks and queues will be much easier to handle if you are comfortable with the ins and
-outs of the data structure. The problems can be quite tricky, though. While some problems may be
-slight modifications on the original data structure, others have much more complex challenges. 
-The stack data structure is precisely what it sounds like: a stack of data. In certain types of problems, it can
-be favorable to store data in a stack rather than in an array.</br>
-A stack uses LIFO (last-in first-out) ordering. That is, as in a stack of dinner plates, the most recent item
-added to the stack is the first item to be removed.</br>
+ First, we will talk about stacks. A Stack is a linear data structure that is very similar to a list because it stores items in an order, but you can only access to an item at the top. One example in the real world is when you press Command + Z and Command + Y on Mac or Control + Z and Control + Y on Microsoft to undo and redo something, in both cases you are only going to have access to the last change you have made. Another demonstration of a stack would be when you try to go backward or forward on the browser. Furthermore, a Stack is an abstract data type, but it could also be implemented using concrete data structures like Dynamic Arrays and Linked Lists.</br>
 It uses the following operations:</br>
 - pop(): Remove the top item from the stack.
 - push( item) : Add an item to the top of the stack.
@@ -255,3 +249,27 @@ simple recursive algorithm and implement it iteratively.)
  ___
  - ## Queue
  ___
+ A queue implements FIFO (first-in first-out) ordering. As in a line or queue at a ticket stand, items are
+removed from the data structure in the same order that they are added.
+Unlike stacks, in a Queue, the last item to get in will be the last to get out and the first item that got in will be the first to get out. Some applications of a queue in the real world are scheduling systems, networking and handling congestion, multiplayer gaming, interview questions, music, etc. A Queue is an abstract data type, but it could also be implemented using concrete data structures like Dynamic Arrays and Linked Lists.
+</br>
+It uses the operations:</br>
+- add (item) : Add an item to the end of the list.
+- remove(): Remove the first item in the list.
+- peek(): Return the top of the queue.
+- isEmpty() : Return true if and only if the queue is empty.
+[Queue](https://miro.medium.com/max/640/0*wZ-0p2hOFF7ygggn.webp)
+___
+
+<b>Below is the code for the methods of a Queue</b>
+![queue in a linked list](https://miro.medium.com/max/720/1*vg7fz8h1raXIclhuM4o-Fg.webp)
+</br><i>Queue in a linked list</i>
+___
+![queue in an array](https://miro.medium.com/max/720/1*K9iFiiemK59hAs_s1V2p4g.webp)
+</br><i>Queue in an array</i>
+___
+![Big(o) Stack](https://miro.medium.com/max/720/1*3Wyc_5PA4bmy0pQdy8eM2w.webp)
+ 
+ ___
+ Usefull sites
+ - [Stacks, Queues and Big O Notation](https://sebastian-abarca.medium.com/stacks-queues-and-big-o-notation-4a555443260c)
