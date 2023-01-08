@@ -311,6 +311,7 @@ class Tree {
 
 A binary tree is a tree in which each node has up to two children. Not all trees are binary trees. For example,
 this tree is not a binary tree. You could call it a ternary tree.</br>
+
 ![Ternary Tree](https://algomonster.s3.us-east-2.amazonaws.com/dfs_with_states.png)
 
 <i>A node is called a "leaf" node if it has no children.</i>
@@ -324,6 +325,12 @@ The definition of a binary search tree can vary slightly with respect to equalit
 or can be on either side. All are valid definitions, but you should clarify this with your interviewer.</br>
 
 ![](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/image%20(2).png)
+
+- <h4><b>Balanced vs. Unbalanced</b></h4>
+
+While many trees are balanced, not all are. Ask your interviewer for clarification here. Note that balancing a
+tree does not mean the left and right subtrees are exactly the same size (like you see under "perfect binary
+trees" in the following diagram). </br>
 
 
  ___
