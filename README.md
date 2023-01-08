@@ -244,6 +244,7 @@ temporary data onto a stack as you recurse, but then remove them as you backtrac
 the recursive check failed). A stack offers an intuitive way to do this.
 A stack can also be used to implement a recursive algorithm iteratively. (This is a good exercise! Take a
 simple recursive algorithm and implement it iteratively.) 
+___
 ![Big(o) Stack](https://miro.medium.com/max/720/1*_YdiFL2ZRgFfZQFC-yJmlw.webp)
 
  ___
