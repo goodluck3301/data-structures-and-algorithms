@@ -332,3 +332,123 @@ trees" in the following diagram). </br>
  ___
  - ## Graphs
  ___
+ 
+ A tree is actually a type of graph, but not all graphs are trees. Simply put, a tree is a connected graph without
+cycles.</br>
+A graph is simply a collection of nodes with edges between (some of) them.
+- Graphs can be either directed (like the following graph) or undirected. While directed edges are like a one-way street, undirected edges are like a two-way street.
+- The graph might consist of multiple isolated subgraphs. If there is a path between every pair of vertices,
+it is called a "connected graph."
+- The graph can also have cycles (or not). An "acyclic graph" is one without cycles. 
+
+___
+This is the most common way to represent a graph. Every vertex (or node] stores a list of adjacent vertices.
+In an undirected graph, an edge like (a , b) would be stored twice: once in a's adjacent vertices and once
+in b s adjacent vertices.
+A simple class definition for a graph node could look essentially the same as a tree node
+```java
+class Graph {
+     publi c Node[] nodes;
+ }
+
+ clas s Node {
+     public String name;
+     publi c Node[] children ; 
+ }
+```
+The Graph class is used because, unlike in a tree, you can't necessarily reach all the nodes from a single node.
+You don't necessarily need any additional classes to represent a graph. An array (or a hash table) of lists
+(arrays, array lists, linked lists, etc.) can store the adjacency list. The graph above could be represented as: 
+
+```
+6: 1
+1: 2
+2: 3
+3: 2
+4: 6
+5: 4
+6: S 
+```
+This is a bit more compact, but it isn't quite as clean. We tend to use node classes unless there's a compelling
+reason not to. 
+</br>
+The same graph algorithms that are used ori adjacency lists (breadth-first search, etc.) can be performed
+with adjacency matrices, but they may be somewhat tess efficient. !n the adjacency list representation, you
+can easily iterate through the neighbors of a node. In the adjacency matrix representation, you will need to
+iterate through all the nodes to identify a node's neighbors. 
+</br>
+
+- Graph Search 
+
+The two most common ways to search a graph are depth-first search and breadth-first search.
+In depth-first search (DFS), we start at the root (or another arbitrarily selected node) and explore each
+branch completely before moving on to the next branch. That is, we go deep first (hence the name depthfirst search) before we go wide.
+In breadth-first search (BFS), we start at the root (or another arbitrarily selected node) and explore each
+neighbor before going on to any of their children. That is, we go wide (hence breadth-first search) before
+we go deep.
+See the below depiction of a graph and its depth-first and breadth-first search (assuming neighbors are
+iterated in numerical order). 
+
+![](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/image%20(1).jpg)
+
+Breadth-first search and depth-first search tend to be used in different scenarios. DFS is often preferred if we
+want to visit every node in the graph. Both will work just fine, but depth-first search is a bit simpler.
+However, if we want to find the shortest path (or just any path) between two nodes, 8FS is generally better.
+Consider representing all the friendships in the entire worid in a graph and trying to find a path of friendships between Ash and Vanessa.
+In depth-first search, we could take a path like Ash -> Bria n -> Carleto n -> Davi s -> Eri c
+-> Farah -> Gayle -> Harr y -> Isabell a -> Dohn -> Kari... and then find ourselves very
+far away. We could go through most of the world without realizing that, in fact, Vanessa is Ash's friend. We
+will still eventually find the path, but it may take a long time. It also won't find us the shortest path. 
+
+- Threes & Graphs
+
+Depth-First Search (DFS)</br>
+
+In DFS, we visit a node a and then iterate through each of a's neighbors. When visiting a node b that is a
+neighbor of a, we visit all of b's neighbors before going on to a's other neighbors. That is, a exhaustively
+searches b's branch before any of its other neighbors.
+Note that pre-order and other forms of tree traversal are a form of DFS. The key difference is that when
+implementing this algorithm for a graph, we must check if the node has been visited. If we don't, we risk
+getting stuck in an infinite loop.</br>
+The pseudocode below implements DFS. 
+```java
+void search(Node root) {
+     if (roo t == null ) return ;
+     visit(root) ;
+     root.visite d = true ;
+     foreach (Node n in root.adjacent) {
+          if (n.visited == false ) {
+               search(n);
+          }
+     }
+}
+```
+Breadth-First Search (BFS)</br>
+
+BFS is a bit less intuitive, and many interviewees struggle with the implementation unless they are already
+familiar with it. The main tripping point is the (false) assumption that BFS is recursive. It's not. Instead, it
+uses a queue.
+In BFS, node a visits each of a's neighbors before visiting any of their neighbors. You can think of this as
+searching level by level out from a. An iterative solution involving a queue usually works best,
+
+```java
+void search(Node root) {
+     Queue queue = new Queue();
+     root.marked = true ;
+     queue.enqueue(root); // Add to the end of queue
+
+     while (Iqueue.isEmptyO) {
+          Node r « queue.dequeue(); // Remove from the fron t of the queue
+          visit(r) ;
+          foreach (Node n in r.adjacent) {
+               if (n.marked == false ) {
+                    n.marked = true ;
+                    queue.enqueue(n);
+               }
+          }
+     }
+} 
+```
+If you are asked to implement BFS, the key thing to remember is the use of the queue. The rest of the algorithm flows from this fact. 
+
+</br>
