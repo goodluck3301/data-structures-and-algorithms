@@ -6,8 +6,8 @@
      - [Stack](https://github.com/goodluck3301/data-structures-and-algorithms#stack)
      - [Queue](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/README.md#queue)
 - ## Non Linear Data Structures
-     - Trees
-     - Graphs
+     - [Trees](https://github.com/goodluck3301/data-structures-and-algorithms#trees)
+     - [Graphs](https://github.com/goodluck3301/data-structures-and-algorithms#graphs)
      - [Map](https://github.com/goodluck3301/data-structures-and-algorithms#map-implementations)
 ___
 
