@@ -1,7 +1,7 @@
 # Data Structures & Algorithms
 
 - ## Linear Data Structures
-     - Arrays
+     - [Arrays](https://www.youtube.com/watch?v=RZ61UfsyIOY)
      - [Linked List](https://github.com/goodluck3301/data-structures-and-algorithms#linked-list)
      - [Stack](https://github.com/goodluck3301/data-structures-and-algorithms#stack)
      - [Queue](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/README.md#queue)
