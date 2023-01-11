@@ -473,6 +473,7 @@ class Graph {
  Adjacency list of vertex 4
  head -> 0-> 1-> 3
 ```
+Adjacency Matrix representation in Java
 
 ```java
 
