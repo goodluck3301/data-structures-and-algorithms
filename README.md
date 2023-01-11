@@ -398,8 +398,9 @@ Consider representing all the friendships in the entire worid in a graph and try
 In depth-first search, we could take a path like Ash -> Bria n -> Carleto n -> Davi s -> Eri c
 -> Farah -> Gayle -> Harr y -> Isabell a -> Dohn -> Kari... and then find ourselves very
 far away. We could go through most of the world without realizing that, in fact, Vanessa is Ash's friend. We
-will still eventually find the path, but it may take a long time. It also won't find us the shortest path. 
+will still eventually find the path, but it may take a long time. It also won't find us the shortest path. </br>
 
+Adjacency List representation in Java
 ```java
  
 import java.util.*;
