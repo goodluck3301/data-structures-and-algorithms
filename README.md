@@ -584,3 +584,48 @@ void search(Node root) {
 If you are asked to implement BFS, the key thing to remember is the use of the queue. The rest of the algorithm flows from this fact. 
 
 </br>
+
+- # Sorting Algorithms
+ ___
+  - ## [Bubble Sort](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/sorting-algorithms/bubble-sort.java)
+___
+
+![Bubble Sort](https://www.programmingsimplified.com/images/c/bubble-sort.gif)
+
+Understanding implementation</br>
+
+```java
+public static void bubbleSort(int [] sort_arr, int len){
+        
+      for (int i=0;i<len-1;++i){
+
+            for(int j=0;j<len-i-1; ++j){
+
+                if(sort_arr[j+1]<sort_arr[j]){
+
+                    int swap = sort_arr[j];
+                    sort_arr[j] = sort_arr[j+1];
+                    sort_arr[j+1] = swap;
+
+                }
+            }
+        }
+    }
+```
+
+- The first step is to create a method, ```bubbleSort```, that takes the array as the input to be sorted, ```sort_arr```, and the ```length``` of the array, ```len```, as seen on line 3 in the code above.
+
+- The second step is to create an outer for loop which will iterate over each element of the array as shown on line 5.
+
+- The third step is to create an inner for loop as shown on line 7. This ```for``` loop starts from the first element of the array till the second last ```index```, ```(len - i - 1)```.
+
+- Each time one index less than the last is traversed as at the end of each iteration, the largest element for that iteration reaches the end.
+Within the nested for loop is the if condition from lines 9 to 15. This checks that if the element on the left is greater than that on the right. If so, it swaps the two elements.
+
+[Full Java Code](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/sorting-algorithms/bubble-sort.java#L1)
+
+<i>`Note: The outer loop will iterate over all elements in the array even if the array is already completely sorted`</i>
+
+<b>Time Complexity</b>
+
+Since there are two nested loops within the algorithm, the time complexity will be ```O(n^2)``` where n is equivalent to the length of the array to be sorted.
