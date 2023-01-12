@@ -4,7 +4,7 @@
      - [Bubble Sort](https://github.com/goodluck3301/data-structures-and-algorithms#bubble-sort)
      
 - ## Linear Data Structures
-     - [Arrays](https://www.youtube.com/watch?v=RZ61UfsyIOY)
+     - [Array/ArrayList](https://www.youtube.com/watch?v=RZ61UfsyIOY)
      - [Linked List](https://github.com/goodluck3301/data-structures-and-algorithms#linked-list)
      - [Stack](https://github.com/goodluck3301/data-structures-and-algorithms#stack)
      - [Queue](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/README.md#queue)
