@@ -1,7 +1,7 @@
 # Data Structures & Algorithms
 
-- ## Sorting Algorithms
-     - [Bubble Sort](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/sorting-algorithms/bubble-sort.java)
+- ## [Sorting Algorithms](https://github.com/goodluck3301/data-structures-and-algorithms#sorting-algorithms-1)
+     - [Bubble Sort](https://github.com/goodluck3301/data-structures-and-algorithms#bubble-sort)
      
 - ## Linear Data Structures
      - [Arrays](https://www.youtube.com/watch?v=RZ61UfsyIOY)
