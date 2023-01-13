@@ -3,7 +3,7 @@
 - ## [Sorting Algorithms](https://github.com/goodluck3301/data-structures-and-algorithms#sorting-algorithms-1)
      - [Bubble Sort](https://github.com/goodluck3301/data-structures-and-algorithms#bubble-sort)
      - [Selection Sort](https://github.com/goodluck3301/data-structures-and-algorithms#selection-sort)
-     - [Merge Sort](https://github.com/goodluck3301/data-structures-and-algorithms/edit/main/README.md#merge-sort)
+     - [Merge Sort](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/README.md#merge-sort)
      
 - ## Linear Data Structures
      - [Array/ArrayList](https://www.youtube.com/watch?v=RZ61UfsyIOY)
