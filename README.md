@@ -623,3 +623,40 @@ Within the nested for loop is the if condition from lines 9 to 15. This checks t
 <b>Time Complexity</b>
 
 Since there are two nested loops within the algorithm, the time complexity will be ```O(n^2)``` where n is equivalent to the length of the array to be sorted.
+
+ ___
+  - ## Selection Sort
+___
+
+![](https://miro.medium.com/max/720/1*5WXRN62ddiM_Gcf4GDdCZg.gif)
+
+O(n^2) average and worst case. Memory - 0(1).
+
+Selection sort is the child's algorithm: simple, but inefficient. Find the smallest element using a linear scan
+and move it to the front (swapping it with the front element). Then, find the second smallest and move it,
+again doing a linear scan. Continue doing this until all the elements are in place
+
+```java
+void sort(int arr[]) {
+        int n = arr.length;
+ 
+        // One by one move boundary of unsorted subarray
+        for (int i = 0; i < n-1; i++)
+        {
+            // Find the minimum element in unsorted array
+            int min_idx = i;
+            for (int j = i+1; j < n; j++)
+                if (arr[j] < arr[min_idx])
+                    min_idx = j;
+ 
+            // Swap the found minimum element with the first
+            // element
+            int temp = arr[min_idx];
+            arr[min_idx] = arr[i];
+            arr[i] = temp;
+        }
+}
+```
+
+
+
