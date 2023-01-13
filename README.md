@@ -597,20 +597,14 @@ Understanding implementation</br>
 ```java
 public static void bubbleSort(int [] sort_arr, int len){
         
-      for (int i=0;i<len-1;++i){
-
-            for(int j=0;j<len-i-1; ++j){
-
-                if(sort_arr[j+1]<sort_arr[j]){
-
+      for (int i=0;i<len-1;++i)
+            for(int j=0;j<len-i-1; ++j)
+                if(sort_arr[j+1]<sort_arr[j]) {
                     int swap = sort_arr[j];
                     sort_arr[j] = sort_arr[j+1];
                     sort_arr[j+1] = swap;
-
                 }
-            }
-        }
-    }
+}
 ```
 
 - The first step is to create a method, ```bubbleSort```, that takes the array as the input to be sorted, ```sort_arr```, and the ```length``` of the array, ```len```, as seen on line 3 in the code above.
