@@ -3,6 +3,7 @@
 - ## [Sorting Algorithms](https://github.com/goodluck3301/data-structures-and-algorithms#sorting-algorithms-1)
      - [Bubble Sort](https://github.com/goodluck3301/data-structures-and-algorithms#bubble-sort)
      - [Selection Sort](https://github.com/goodluck3301/data-structures-and-algorithms#selection-sort)
+     - [Merge Sort](https://github.com/goodluck3301/data-structures-and-algorithms/edit/main/README.md#merge-sort)
      
 - ## Linear Data Structures
      - [Array/ArrayList](https://www.youtube.com/watch?v=RZ61UfsyIOY)
@@ -625,7 +626,7 @@ Within the nested for loop is the if condition from lines 9 to 15. This checks t
 
 Since there are two nested loops within the algorithm, the time complexity will be ```O(n^2)``` where n is equivalent to the length of the array to be sorted.
 
- ___
+___
   - ## Selection Sort
 ___
 
@@ -659,5 +660,53 @@ void sort(int arr[]) {
 }
 ```
 
+___
+  - ## Merge Sort
+___
 
+![](https://gifimage.net/wp-content/uploads/2017/10/merge-sort-gif-5.gif)
 
+Runtime: 0( n log(n) ) average and worst case. Memory: Depends.</br></br>
+
+Merge sort divides the array in half, sorts each of those halves, and then merges them back together. Each
+of those halves has the same sorting algorithm applied to it. Eventually, you are merging just two single element arrays. It is the "merge" part that does all the heavy lifting.
+
+```java
+public static void mergeSort(int[] a, int n) {
+    if (n < 2) 
+        return;
+        
+    int mid = n / 2;
+    int[] l = new int[mid];
+    int[] r = new int[n - mid];
+
+    for (int i = 0; i < mid; i++)
+        l[i] = a[i];
+
+    for (int i = mid; i < n; i++)
+        r[i - mid] = a[i];
+        
+    mergeSort(l, mid);
+    mergeSort(r, n - mid);
+
+    merge(a, l, r, mid, n - mid);
+}
+```
+```java
+public static void merge (
+  int[] a, int[] l, int[] r, int left, int right) {
+ 
+    int i = 0, j = 0, k = 0;
+    while (i < left && j < right) {
+        if (l[i] <= r[j])
+            a[k++] = l[i++];
+        else 
+            a[k++] = r[j++];
+    }
+    while (i < left)
+        a[k++] = l[i++];
+        
+    while (j < right) 
+        a[k++] = r[j++];
+}
+```
