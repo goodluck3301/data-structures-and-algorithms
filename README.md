@@ -100,7 +100,7 @@ ___
 
 ### [Big O notation for Linked List](https://medium.com/@mckenziefiege/arrays-linked-lists-and-big-o-notation-486727b6259b)<br/>
 
-![Big(o) Linked List](https://miro.medium.com/max/720/1*3IlTLK_S0HmATuYQGxcbUA.webp)
+![Big(o) Linked List](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
 
 ### When to use a linked list over an array/array list?
 
