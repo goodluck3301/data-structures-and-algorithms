@@ -1,4 +1,4 @@
-# LeetCode
+# [LeetCode](https://leetcode.com/)
  - ## Easy
    - [Reverse Integer](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/LeetCode_problems/README.md#reverse-integer)
    - [Two Sum](https://github.com/goodluck3301/data-structures-and-algorithms/tree/main/LeetCode_problems#two-sum)
