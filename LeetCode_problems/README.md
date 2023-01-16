@@ -1,7 +1,7 @@
 # LeetCode
  - ## Easy
    - [Reverse Integer](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/LeetCode_problems/README.md#reverse-integer)
-   - [Two Sum]
+   - [Two Sum](hhttps://github.com/goodluck3301/data-structures-and-algorithms/tree/main/LeetCode_problems#two-sum)
 
  
  
@@ -61,4 +61,4 @@ Constraints:
   -109 <= target <= 109
   Only one valid answer exists.
 ```
-
+[Source Code](https://github.com/goodluck3301/data-structures-and-algorithms/blob/main/LeetCode_problems/Two_Sum.kt)
