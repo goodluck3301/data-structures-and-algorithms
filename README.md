@@ -1,4 +1,4 @@
-# Data Structures & Algorithms
+# Data Structures & Algorithms by Levon (goodluck3301)
 
 - ## [Sorting Algorithms](https://github.com/goodluck3301/data-structures-and-algorithms#sorting-algorithms-1)
      - [Bubble Sort](https://github.com/goodluck3301/data-structures-and-algorithms#bubble-sort)
