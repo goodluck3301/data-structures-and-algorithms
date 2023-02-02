@@ -17,10 +17,10 @@
 ___
 
 - ## [Map Implementations](https://docs.oracle.com/javase/tutorial/collections/implementations/map.html)
-- [HashMap](https://github.com/goodluck3301/data-structures-and-algorithms#hashtablehashmap)
-- [HashTable](https://github.com/goodluck3301/data-structures-and-algorithms#hashtablehashmap)
+- [HashMap](https://github.com/goodluck3301/data-structures-and-algorithms#hashtablehashmap)/[HashTable](https://github.com/goodluck3301/data-structures-and-algorithms#hashtablehashmap)
 - [LinkedHashMap](https://github.com/goodluck3301/data-structures-and-algorithms#linkedhashmap)
-- SortedMap
+
+SortedMap
   - [TreeHashMap](https://github.com/goodluck3301/data-structures-and-algorithms#treemap)
  ___
  - ## HashTable/HashMap
